@@ -33,3 +33,6 @@ Route::get('/chat', function () {
 Route::get('/create', function () {
     return inertia('Create');
 });
+Route::get('/details', function () {
+    return inertia('Details');
+});

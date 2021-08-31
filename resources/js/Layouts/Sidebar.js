@@ -1,7 +1,11 @@
 import { Link } from '@inertiajs/inertia-react'
 import React from 'react'
+import { useState } from 'react'
+import { usePage } from '@inertiajs/inertia-react'
 import "../../css/sidebar.css"
+
 function Sidebar({children}) {
+    const url = usePage().url
     return (
         
         <div>
@@ -15,10 +19,10 @@ function Sidebar({children}) {
 <div className="menu">
     <div className="cards">
         <ul className="ul">
-            <Link className="ul" href="/dashboard"><li className="active">Dashboard</li></Link>
-            <Link className="ul" href="/explore"><li>Explore </li></Link>
-            <Link className="ul" href="/create"><li>Create</li></Link>
-            <Link className="ul" href="/chat"><li>Chat</li></Link>
+            <Link className="ul" href="/dashboard"><li className={url === "/dashboard"? "active" :""}>Dashboard</li></Link>
+            <Link className="ul" href="/explore"><li className={url === "/explore"? "active" :""}>Explore </li></Link>
+            <Link className="ul" href="/create"><li className={url === "/create"? "active" :""}>Create</li></Link>
+            <Link className="ul" href="/chat"><li className={url === "/chat"? "active" :""}>Chat</li></Link>
             <li>Logout</li>
         </ul>
 

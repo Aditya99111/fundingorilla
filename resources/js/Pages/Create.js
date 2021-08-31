@@ -18,12 +18,20 @@ function Create() {
                                 <input type="text" placeholder="Enter your name" required />
                             </div>
                             <div className="input_box">
+                                <span className="details">Age</span>
+                                <input type="number" placeholder="Enter your Age" required />
+                            </div>
+                            <div className="input_box">
                                 <span className="details">Email</span>
                                 <input type="text" placeholder="Enter your email" required />
                             </div>
                             <div className="input_box">
                                 <span className="details">Phone Number</span>
                                 <input type="number" placeholder="Enter your number" required />
+                            </div>
+                            <div className="input_box">
+                                <span className="details">Companies Address</span>
+                                <input type="number" placeholder="Enter your Companies Address" required />
                             </div>
                             <div className="input_box">
                                 <span className="details">Company Name</span>
@@ -133,6 +141,14 @@ function Create() {
                             <div className="input_box">
                                 <span className="details">Company Valuation</span>
                                 <input type="text" placeholder="Enter your Address" required />
+                            </div>
+                            <div className="input_box">
+                                <span className="details">Previous year Revenue </span>
+                                <input type="text" placeholder="Enter your Previous year Revenue" required />
+                            </div>
+                            <div className="input_box">
+                                <span className="details">Estimated This Year Revenue </span>
+                                <input type="text" placeholder="Enter your Estimated This Year Revenue" required />
                             </div>
                             <div className="input_box">
                                 <span className="details">Equity</span>
