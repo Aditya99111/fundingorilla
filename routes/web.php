@@ -18,6 +18,18 @@ use Inertia\Inertia;
 
 require __DIR__ . '/auth.php';
 
-Route::get('/about', function () {
-    return inertia('About');
+
+Route::get('/dashboard', function () {
+    return inertia('Dashboard');
+});
+
+Route::get('/explore', function () {
+    return inertia('Explore');
+});
+
+Route::get('/chat', function () {
+    return inertia('Chat');
+});
+Route::get('/create', function () {
+    return inertia('Create');
 });

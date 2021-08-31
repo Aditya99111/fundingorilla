@@ -1,0 +1,194 @@
+.maincontent {
+    margin-top: 80px;
+    padding-top: 50px;
+    height: 85vh;
+    width: 80%;
+    float: right;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      overflow: auto;
+  }
+  
+  .container {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    padding: 10px;
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+  }
+  .container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+  }
+  .container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  .content form .user_details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  .content form .user_details .input_box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+  .content form .input_box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .user_details .input_box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .user_details .input_box input:focus,
+  .user_details .input_box input:valid {
+    border-color: var(--purple);
+  }
+  .content form .gender_details .gender_title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .content form .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+  }
+  .content form .category label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .content form .category label .dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+  }
+  #dot-1:checked ~ .category label .one,
+  #dot-2:checked ~ .category label .two,
+  #dot-3:checked ~ .category label .three {
+    background: #9b59b6;
+    border-color: #d9d9d9;
+  }
+  .content form input[type="radio"] {
+    display: none;
+  }
+  .content form .button {
+    height: 45px;
+    margin: 35px 0;
+  }
+  .content form .button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: var( --gradient);
+  }
+  .content form .button input:hover {
+    transform: scale(0.92);
+  }
+  
+  .heading{
+      border: 1px solid #ccc;
+      font-size: 23px;
+      padding: 5px;
+      margin-right: 10px;
+  }
+  
+  
+  .desc{
+      border: 1px solid #ccc;
+      font-size: 16px;
+      padding: 5px;
+      margin-right: 10px;
+  }
+  .textarea .details{
+      display: block;
+      font-weight: 500;
+      margin-bottom: 10px;
+  }
+  @media (max-width: 584px) {
+    .container {
+      max-width: 100%;
+    }
+    .content form .user_details .input_box {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    .content form .category {
+      width: 100%;
+    }
+    .content form .user_details {
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .user_details::-webkit-scrollbar {
+      width: 5px;
+    }
+  }
+  @media (max-width: 459px) {
+    .container .content .category {
+      flex-direction: column;
+    }
+  }
+  
+  
+  .file_input__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .file_input__label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 12px;
+    background-color: #c577c5;
+    box-shadow: 0px 0px 2px rgba(116, 116, 116, 0.25);
+  }
+  
+  .file_input__label svg {
+    height: 16px;
+    margin-right: 4px;
+  }
+  

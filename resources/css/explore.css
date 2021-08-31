@@ -1,0 +1,104 @@
+.maincontent{
+    margin-top: 80px;
+    padding-top: 50px;
+    height: 85vh;
+    width: 80%;
+    float: right;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.heading{
+    padding-left: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.posts{
+    border-radius: 20px;
+    max-height: 600px;
+    width: 100vh;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-left: 1rem;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.post{
+    height:430px ;
+    width: 264px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.post:hover{
+    transform: scale(1.02);
+}
+.posts::-webkit-scrollbar {
+    display: none;
+}
+.post__heading{
+    max-height: 73px;
+    overflow: hidden;
+    width: auto;
+
+}
+.post__heading h1{
+    font-size: 18px;
+    padding: 15px;
+}
+
+.desc{
+    padding: 25px;
+    max-height: 70px;
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+.productimg{
+    height: 170px;
+    width: auto;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png");
+    position: relative;
+ }
+.productimg p{
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.productimg h6{
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    right: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.button{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 1.4rem;
+    padding: 0.2rem 4.3rem;
+    border-radius: 5px;
+    background: var(--gradient);
+    font-size: 1.4rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    transition: all 0.3s linear;
+}
