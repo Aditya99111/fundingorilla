@@ -1,7 +1,8 @@
 import React from 'react'
-import Sidebar from "../Layouts/Sidebar"
 import "../../css/landing.css"
-function Investor_landing() {
+
+
+function Landing() {
   let acc = document.getElementsByClassName('accordion')
   for (let i = 0; i < acc.length; i++) {
     acc[i].addEventListener('click', function () {
@@ -18,7 +19,6 @@ function Investor_landing() {
         panel.style.maxHeight = panel.scrollHeight + 'px';
         this.classList.toggle('open')
         this.getElementsByClassName('icon')[0].innerHTML = '-'}})}
-
     return (
 
   <div id="business">
@@ -31,7 +31,7 @@ function Investor_landing() {
   <a href="#about">About</a>
   <a href="#features">Features</a>
   <a href="#review">FAQ</a>
-  <a className="conta" href="#feedback">Contact</a>
+  <a  href="#feedback">Contact</a>
 <a href="#signup"> <button  className="btn sign">Signup</button></a> 
 <a href="#login"> <button className="btn log">Login</button></a> 
 </nav>
@@ -43,7 +43,7 @@ function Investor_landing() {
   <a href="#signup" className="btn">Join now</a>
 </div>
 <div className="image">
-  {/* <img height="400px" width="400px" src="images/home.svg" alt="business funding"/> */}
+  {/* <img height="400px" width="400px" src="../../../images/about].svg" alt="business funding"/> */}
 </div>
 </section>
 <section className="about" id="about">
@@ -172,7 +172,7 @@ function Investor_landing() {
       <p>It can take upto 48 hours to get the post approved.</p>
     </div>
   </div>
-<a href="#feedback"><button className="btn feed">Still got any Questions?</button></a>
+<a href="#feedback"><button className="btn feed" >Still got any Questions?</button></a>
 </div>
 </section>
 <section className="contact" id="feedback">
@@ -212,10 +212,10 @@ function Investor_landing() {
   </div>
   <div className="box">
     <h3>Follow us</h3>
-    {/* <a href="https://www.facebook.com/profile.php?id=100069460520027" target="_blank" title="Facebook">Facebook</a>
-    <a href="https://www.instagram.com/fundingorilla/" target="_blank" title="Instagram">Instagram</a>
+    <a href="#" target="_blank" title="Facebook">Facebook</a>
+    <a href="#" target="_blank" title="Instagram">Instagram</a>
     <a href="#" target="_blank" title="pinterest">Pinterest</a>
-    <a href="https://twitter.com/AdityaM34372035" target="_blank" title="Twitter">Twitter</a> */}
+    <a href="#" target="_blank" title="Twitter">Twitter</a>
   </div>
   <div className="box">
     <h3>Contact Info</h3>
@@ -239,13 +239,16 @@ function Investor_landing() {
     <input className="input" type="email"placeholder="Email"/>
     <input className="input" type="number"placeholder="Mobile Number"/>
     <input className="input" type="password"placeholder="Password"/>
+    <div className="select">
 
+    </div>
     </div>
     <div className="login">
     <a href="#" className="btn">Signup</a>
 </div>
 </div>
 </div>
+
 <div id="login" className="overlay">
 <div className="popup">
 <a className="cross" href="#_">X</a>
@@ -260,9 +263,9 @@ function Investor_landing() {
 </div>
 </div>
 </div>
+
 </div>
        
        )
 }
-
-export default Investor_landing
+export default Landing

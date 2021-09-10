@@ -37,11 +37,5 @@ Route::get('/details', function () {
     return inertia('Details');
 });
 Route::get('/', function () {
-    return inertia('Landingpage');
-});
-Route::get('/investor', function () {
-    return inertia('Investor_landing');
-});
-Route::get('/business', function () {
-    return inertia('Business_landing');
+    return inertia('Landing');
 });
