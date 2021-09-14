@@ -21,7 +21,7 @@ require __DIR__ . '/auth.php';
 
 Route::get('/dashboard', function () {
     return inertia('Dashboard');
-});
+})->middleware('auth');
 
 Route::get('/explore', function () {
     return inertia('Explore');
